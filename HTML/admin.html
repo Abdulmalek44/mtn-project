@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../Images/logo.png" type="image/icon type">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../SASS/style.css">
+        <title> بيانات المستخدمين </title>
+    </head>
+
+    <body class="admin-body">
+        <div class="Table-container">
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th> الاسم </th>
+                        <th> الإيميل </th>
+                        <th> رقم الهاتف </th>
+                        <th> مبلغ الفاتورة </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> احمد </td>
+                        <td> ahmad22@gmail.com </td>
+                        <td> 09128269227 </td>
+                        <td class="bill-th">
+                            <form>
+                                <input type="text" class="bill">
+                                <input type="submit" class="admin-btn" value="اضافة">
+                            </form>
+                        </td>
+                    </tr>
+                    <div class="home-btn">
+                        <a href="index.html"> الصفحة الرئيسية</a>
+                    </div>
+                </tbody>
+            </table>
+        </div>
+        <div class="loader" id="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function () {
+                loader.style.display = "none";
+            })
+        </script>
+    </body>
+
+</html>

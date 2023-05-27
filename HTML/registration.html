@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../Images/logo.png" type="image/icon type">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../SASS/style.css">
+        <title> تسجيل مستخدم جديد </title>
+    </head>
+
+    <body class="body-registr" style="position: relative;">
+        <section class="form-section">
+            <div class="section-box">
+                <div class="form-photo">
+                    <img src="../Images/1200px-MTN_Log.svg.png" alt="">
+                </div>
+                <form action="">
+                    <h1> للتسجيل الرجاء ادخال المعلومات </h1>
+                    <div class="nick-name">
+                        <label class="nick-name-label" for="Nick-name"> اللقب </label>
+                        <select name="nick-name" id="Nick-name" required>
+                            <option selected> السيد </option>
+                            <option> السيدة </option>
+                            <option> انسة </option>
+                            <option> السادة </option>
+                            <option> الدكتور </option>
+                            <option> المهندس </option>
+                            <option> اخرى </option>
+                        </select>
+                    </div>
+                    <div class="first-name">
+                        <label class="first-name-label" for="First-name"> الاسم الأول </label>
+                        <input type="text" name="first-name" id="First-name" required>
+                    </div>
+                    <div class="family-name">
+                        <label class="family-name-label" for="Family-name"> اسم العائلة </label>
+                        <input type="text" name="family-name" id="Family-name" required>
+                    </div>
+                    <div class="tel-number">
+                        <label class="tel-number-label" for="Tel-number"> رقم الهاتف </label>
+                        <input type="tel" name="tel-number" id="Tel-number" required value="09">
+                    </div>
+                    <div class="email">
+                        <label class="email-label" for="Email"> الإيميل | e-mail </label>
+                        <input type="Email" name="email" id="Email" required>
+                    </div>
+                    <div class="user-name">
+                        <label class="user-name-label" for="User-name"> اسم المستخدم </label>
+                        <input type="text" name="user-name" id="User-name" required>
+                        <span> يمكن أن يكون اسم المستخدم أي نص بحد أدنى 8 أحرف . </span>
+                    </div>
+                    <div class="password">
+                        <label class="passwor-label" for="Password"> كلمة المرور </label>
+                        <input type="password" name="password" id="Password" required>
+                        <span> يجب أن يحتوي على 8 أحرف كحد أدنى</span>
+                        <span> يجب أن تحتوي على رقم واحد على الاقل </span>
+                        <span> يجب أن تحتوي على رقم واحد على الاقل </span>
+                    </div>
+                    <div class="confirm-password">
+                        <label class="confirm-password-label" for="Confirm-password"> تأكيد كلمة المرور </label>
+                        <input type="password" name="confirm-password" id="Confirm-password" required>
+                    </div>
+                    <div class="gender">
+                        <label class="gende-label" for="Gender"> الجنس </label>
+                        <select name="gender" id="Gender" required>
+                            <option selected> ذكر </option>
+                            <option> انثى </option>
+                        </select>
+                    </div>
+                    <div class="birth-date">
+                        <label class="birth-date-label" for="Birth-date"> تاريخ الميلاد </label>
+                        <div class="select">
+                            <div class="year">
+                                <label for="Year"> السنة </label>
+                                <select name="year" id="Year" required>
+                                    <option selected> 2001 </option>
+                                    <option> 2002 </option>
+                                    <option> 2003 </option>
+                                    <option> 2004 </option>
+                                    <option> 2005 </option>
+                                    <option> 2006 </option>
+                                    <option> 2007 </option>
+                                    <option> 2008 </option>
+                                    <option> 2009 </option>
+                                    <option> 2010 </option>
+                                    <option> 2011 </option>
+                                    <option> 2012 </option>
+                                    <option> 2013 </option>
+                                    <option> 2014 </option>
+                                    <option> 2015 </option>
+                                    <option> 2016 </option>
+                                    <option> 2017 </option>
+                                    <option> 2018 </option>
+                                    <option> 2019 </option>
+                                    <option> 2020 </option>
+                                    <option> 2021 </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="select">
+                            <div class="month">
+                                <label for="Month"> الشهر </label>
+                                <select t name="month" id="Month" required>
+                                    <option selected> 1 </option>
+                                    <option> 2 </option>
+                                    <option> 3 </option>
+                                    <option> 4 </option>
+                                    <option> 5 </option>
+                                    <option> 6 </option>
+                                    <option> 7 </option>
+                                    <option> 8 </option>
+                                    <option> 9 </option>
+                                    <option> 10 </option>
+                                    <option> 11 </option>
+                                    <option> 12 </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="select">
+                            <div class="day">
+                                <label for="Day"> اليوم </label>
+                                <select name="day" id="Day" required>
+                                    <option selected> 1 </option>
+                                    <option> 2 </option>
+                                    <option> 3 </option>
+                                    <option> 4 </option>
+                                    <option> 5 </option>
+                                    <option> 6 </option>
+                                    <option> 7 </option>
+                                    <option> 8 </option>
+                                    <option> 9 </option>
+                                    <option> 10 </option>
+                                    <option> 11 </option>
+                                    <option> 12 </option>
+                                    <option> 13 </option>
+                                    <option> 14 </option>
+                                    <option> 15 </option>
+                                    <option> 16 </option>
+                                    <option> 17 </option>
+                                    <option> 18 </option>
+                                    <option> 19 </option>
+                                    <option> 20 </option>
+                                    <option> 21 </option>
+                                    <option> 22 </option>
+                                    <option> 23 </option>
+                                    <option> 24 </option>
+                                    <option> 25 </option>
+                                    <option> 26 </option>
+                                    <option> 27 </option>
+                                    <option> 28 </option>
+                                    <option> 29 </option>
+                                    <option> 30 </option>
+                                    <option> 31 </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city">
+                        <label class="city-label" for="City"> المدينة </label>
+                        <select name="city" id="City" required>
+                            <option selected> دمشق </option>
+                            <option> حلب </option>
+                            <option> حمص </option>
+                            <option> حماه </option>
+                            <option> طرطوس </option>
+                            <option> الاذقية </option>
+                            <option> السويداء </option>
+                            <option> القنيطرة </option>
+                            <option> درعا </option>
+                            <option> دير الزور </option>
+                            <option> الحسكة </option>
+                            <option> القامشلي </option>
+                            <option> الرقة </option>
+                        </select>
+                    </div>
+                    <div class="job">
+                        <label class="job-label" for="Jop"> المهنة </label>
+                        <select name="job" id="Jop" required>
+                            <option selected> المحاسبة / المالية </option>
+                            <option> تكنولوجيا المعلومات </option>
+                            <option> الاستشارات </option>
+                            <option> خدمة العملاء / الدعم </option>
+                            <option> خدمة العملاء / الدعم </option>
+                            <option> الاتصالات/تقنيات الشبكة </option>
+                            <option> إداري </option>
+                            <option> موظف حكومي / عسكري </option>
+                            <option> الموارد البشرية/الإدارة </option>
+                            <option> التصنيع / الإنتاج / العمليات </option>
+                            <option> المهنية (الطبية والقانونية، وما إلى ذلك) </option>
+                            <option> البحث والتطوير </option>
+                            <option> التسويق </option>
+                            <option> المبيعات </option>
+                            <option> عمل خاص </option>
+                            <option> طالب </option>
+                            <option> تاجر / حرفي </option>
+                            <option> عاطل عن العمل </option>
+                            <option> أخرى </option>
+                        </select>
+                    </div>
+                    <div class="text-area">
+                        <label for="Text-area"> العنوان </label>
+                        <textarea name="location" id="Text-area" cols="40" rows="5" required>
+                        </textarea>
+                    </div>
+                    <div class="terms-condtion">
+                        <label class="terms-condtion-label" for="Terms-Condtion"> &nbsp أوافق على الشروط و
+                            الأحكام</label>
+                        <input type="checkbox" id="Terms-Condtion" required>
+                    </div>
+                    <div class="form-buttons">
+                        <input type="submit" value=" ارسال " class="submit-button">
+                        <input type="reset" value=" مسح البيانات " class="reset-button">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="home-btn-registr">
+            <a href="index.html"> الصفحة الرئيسية</a>
+        </div>
+        <div class="loader" id="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function () {
+                loader.style.display = "none";
+            })
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,175 @@
+@import 'button';
+@import 'var';
+
+.login-body {
+    background-image: url("../Images/login-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .login-Container {
+        background-color: #fbfbfb00;
+        padding: 40px;
+        max-width: 9em;
+        min-width: 23em;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0 5px 202px #00000080;
+
+        h1 {
+            font-size: 30px;
+            padding: 15px;
+            font-weight: 700;
+            color: $login-color;
+            margin: 0 auto 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            direction: rtl;
+            width: 100%;
+
+            .user-name,
+            .password,
+            .login-btn {
+                width: 100%;
+                display: flex;
+                flex-direction: column-reverse;
+                margin-bottom: 30px;
+
+
+                label {
+                    font-size: 15px;
+                    color: $login-color;
+                    font-weight: 500;
+                }
+
+                .User-name,
+                .Password {
+                    background-color: $secondary-color;
+                    outline: transparent;
+                    border: 2px solid transparent;
+                    font-size: 18px;
+                    border-radius: 3px;
+                    color: darken($secondary-color, 30%);
+                    border-bottom: 2px solid $login-color;
+                    caret-color: $login-color;
+
+                    &:focus {
+                        border-bottom: 2px solid $primary-color;
+
+                    }
+                }
+            }
+
+            .registr-link {
+                display: flex;
+                justify-content: flex-end;
+
+                a {
+                    color: darken($secondary-color, 15%);
+                    font-weight: 600;
+                    font-size: 18px;
+                    position: relative;
+                    transition: 0.6s ease;
+                    padding: 10px;
+                    border-radius: 10px;
+
+                    &:hover {
+                        color: $text-color;
+                        margin-left: 10px;
+                        background-color: darken($secondary-color, 3%);
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:1250px) and (min-width:400px) {
+    .login-body {
+        background-position: center;
+    }
+
+}
+
+@media (max-width:450px) and (min-width:350px) {
+    .login-body {
+        background-position: center;
+
+        .login-Container {
+            min-width: 20em;
+        }
+    }
+
+}
+
+@media (max-width:350px) and (min-width:290px) {
+    .login-body {
+        background-position: center;
+
+        .login-Container {
+            min-width: 17em;
+
+            h1 {
+                font-size: 25px;
+                padding: 10px;
+                font-weight: 600;
+                margin: 0 auto 20px;
+            }
+
+            form {
+
+                .user-name,
+                .password,
+                .login-btn {
+                    margin-bottom: 25px;
+
+                    label {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:290px) and (min-width:200px) {
+    .login-body {
+        background-position: center;
+
+        .login-Container {
+            min-width: 15em;
+
+            h1 {
+                font-size: 20px;
+                padding: 10px;
+                font-weight: 600;
+                margin: 0 auto 20px;
+            }
+
+            form {
+
+                .user-name,
+                .password,
+                .login-btn {
+                    margin-bottom: 15px;
+
+                    label {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

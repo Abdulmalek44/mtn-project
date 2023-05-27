@@ -1,0 +1,152 @@
+@import 'button';
+@import 'var';
+
+.bill-body {
+    background-image: url("../Images/bill-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bill-form {
+        background-color: $text-color;
+        padding: 40px;
+        max-width: auto;
+        min-width: auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0 5px 202px #00000080;
+
+        h1 {
+            font-size: 25px;
+            padding: 15px;
+            font-weight: 700;
+            color: $secondary-color;
+            margin: 0 auto 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            direction: rtl;
+            width: 100%;
+
+            .phone-number {
+                width: 100%;
+                display: flex;
+                flex-direction: column-reverse;
+                margin-bottom: 20px;
+
+
+                label {
+                    font-size: 18px;
+                    color: $secondary-color;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+
+                input {
+                    background-color: transparent;
+                    outline: transparent;
+                    border: 2px solid transparent;
+                    font-size: 18px;
+                    border-radius: 3px;
+                    color: darken($secondary-color, 30%);
+                    border-bottom: 2px solid $secondary-color;
+                    caret-color: $secondary-color;
+                }
+            }
+
+
+            .bill-price {
+                width: 100%;
+                display: flex;
+                flex-direction: column-reverse;
+
+
+                label {
+                    font-size: 18px;
+                    color: $secondary-color;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+
+                input {
+                    background-color: transparent;
+                    outline: transparent;
+                    border: 3px solid $secondary-color;
+                    font-size: 18px;
+                    border-radius: 3px;
+                    color: darken($secondary-color, 30%);
+                    caret-color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:550px) and (min-width:400px) {
+    .bill-body {
+        .bill-form {
+            h1 {
+                font-size: 20px;
+            }
+
+            form {
+                .phone-number {
+                    label {
+                        font-size: 15px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:400px) and (min-width:350px) {
+    .bill-body {
+        .bill-form {
+            h1 {
+                font-size: 18px;
+            }
+
+            form {
+                .phone-number {
+                    label {
+                        font-size: 13px;
+
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@media (max-width350px) and (min-width:300px) {
+    .bill-body {
+        .bill-form {
+            h1 {
+                font-size: 16px;
+            }
+
+            form {
+                .phone-number {
+                    label {
+                        font-size: 13px;
+
+                    }
+                }
+            }
+
+        }
+
+    }
+}

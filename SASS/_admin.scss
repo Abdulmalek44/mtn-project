@@ -1,0 +1,104 @@
+@import 'button';
+@import 'var';
+
+.admin-body {
+    background-image: url("../Images/admin-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.Table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+    .content-table {
+        border-collapse: collapse;
+        margin: 30px;
+        font-size: 20px;
+        width: 90%;
+        overflow: hidden;
+        direction: rtl;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 10px 5px 202px #00000080;
+
+
+        thead {
+            tr {
+                background-color: $secondary-color;
+                color: $text-color;
+                padding: 2px;
+                height: 3.2em;
+                text-align: center;
+                font-weight: 700;
+
+                th {
+                    padding: 12px 16px;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                border-bottom: 1px solid $secondary-color;
+                height: 2.5em;
+                background-color: white;
+
+                &:nth-of-type(even) {
+                    background-color: #f6f4f4;
+                }
+
+                &:nth-of-type(even) .bill-th form .bill {
+                    background-color: white;
+                }
+
+
+                &:last-of-type {
+                    border-bottom: 5px solid $secondary-color;
+                }
+
+                .bill-th {
+                    form {
+                        .bill {
+                            outline: transparent;
+                            border: 2px solid transparent;
+                            background-color: #f6f4f4;
+                            height: 30px;
+                            font-size: inherit;
+
+                            &:focus {
+                                outline: $secondary-color;
+                                border: 1px solid $secondary-color;
+
+                            }
+
+                        }
+
+                        .admin-btn {
+                            padding: 5px 10px;
+                            outline: transparent;
+                            border: 2px solid transparent;
+                            background-color: $primary-color;
+                            color: white;
+                            font-weight: 500;
+                            transition: 0.5s ease-in-out;
+
+                            &:hover {
+                                background-color: darken($primary-color, 5%);
+                            }
+                        }
+                    }
+                }
+
+                td {
+                    padding: 12px 16px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

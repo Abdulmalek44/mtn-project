@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../Images/logo.png" type="image/icon type">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../SASS/style.css">
+        <title> الفواتير </title>
+    </head>
+
+    <body class="bill-body">
+        <div class="bill-form">
+            <h1> الاستعلام عن قيمة الفاتوره </h1>
+            <form>
+                <div class="phone-number">
+                    <input type="text" id="Phone-number">
+                    <label class="phone-number-label" for="Phone-number" required> رقم الهاتف </label>
+                </div>
+                <div class="bill-btn">
+                    <input type="submit" value=" ارسال ">
+                </div>
+                <div class="bill-price">
+                    <input type="text" id="Bill-price">
+                    <label class="bill-price-label" for="Bill-price" required> قيمة الفاتوره </label>
+                </div>
+
+            </form>
+        </div>
+        <div class="home-btn">
+            <a href="index.html"> الصفحة الرئيسية</a>
+        </div>
+        <div class="loader" id="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function () {
+                loader.style.display = "none";
+            })
+        </script>
+    </body>
+
+
+</html>
